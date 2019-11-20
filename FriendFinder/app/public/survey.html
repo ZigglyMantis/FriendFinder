@@ -1,199 +1,209 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <!-- linking css and jquery -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
     <title>Survey</title>
 
 </head>
 
-<body>
-    
-    <div class="container">
-            <h2>Survey Questions</h2>
-            <hr>
-            <h3>
-                <strong>About you</strong>
-            </h3>
-            <h4>Name (Required)</h4>
-            <input type="text" id="name" class="form-control" required>
-            <h4>Link to Photo Image (Required)</h4>
-            <input type="text" id="photo" class="form-control" required>
-            <h3>
-                    <strong>Question #1</strong>
-                </h3>
-                <h4>Placeholder</h4>
-                <select id="q1" style="display: table">
-                    <option value="NA"></option>
-                    <option value="1">1 (Strongly Disagree)</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5 (Strongly Agree)</option>
-                </select>
-            <h3>
-                    <strong>Question #2</strong>
-                </h3>
-                <h4>Placeholder</h4>
-                <select id="q2" style="display: table">
-                    <option value="NA"></option>
-                    <option value="1">1 (Strongly Disagree)</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5 (Strongly Agree)</option>
-                </select>
-            <h3>
-                    <strong>Question #3</strong>
-                </h3>
-                <h4>Placeholder</h4>
-                <select id="q3" style="display: table">
-                    <option value="NA"></option>
-                    <option value="1">1 (Strongly Disagree)</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5 (Strongly Agree)</option>
-                </select>
-            <h3>
-                    <strong>Question #4</strong>
-                </h3>
-                <h4>Placeholder</h4>
-                <select id="q4" style="display: table">
-                    <option value="NA"></option>
-                    <option value="1">1 (Strongly Disagree)</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5 (Strongly Agree)</option>
-                </select>
-            <h3>
-                    <strong>Question #5</strong>
-                </h3>
-                <h4>Placeholder</h4>
-                <select id="q5" style="display: table">
-                    <option value="NA"></option>
-                    <option value="1">1 (Strongly Disagree)</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5 (Strongly Agree)</option>
-                </select>
-            <h3>
-                    <strong>Question #6</strong>
-                </h3>
-                <h4>Placeholder</h4>
-                <select id="q6" style="display: table">
-                    <option value="NA"></option>
-                    <option value="1">1 (Strongly Disagree)</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5 (Strongly Agree)</option>
-                </select>
-            <h3>
-                    <strong>Question #7</strong>
-                </h3>
-                <h4>Placeholder</h4>
-                <select id="q7" style="display: table">
-                    <option value="NA"></option>
-                    <option value="1">1 (Strongly Disagree)</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5 (Strongly Agree)</option>
-                </select>
-            <h3>
-                    <strong>Question #8</strong>
-                </h3>
-                <h4>Placeholder</h4>
-                <select id="q8" style="display: table">
-                    <option value="NA"></option>
-                    <option value="1">1 (Strongly Disagree)</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5 (Strongly Agree)</option>
-                </select>
-            <h3>
-                    <strong>Question #9</strong>
-                </h3>
-                <h4>Placeholder</h4>
-                <select id="q9" style="display: table">
-                    <option value="NA"></option>
-                    <option value="1">1 (Strongly Disagree)</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5 (Strongly Agree)</option>
-                </select>
-            <h3>
-                    <strong>Question #10</strong>
-                </h3>
-                <h4>Placeholder</h4>
-                <select id="q10" style="display: table">
-                    <option value="NA"></option>
-                    <option value="1">1 (Strongly Disagree)</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5 (Strongly Agree)</option>
-                </select>
-            <button type="submit" class="btn btn-primary submit" style="margin: 25px 0px 25px 0px;">Submit</button>
-        </div>
+<body style="background: beige;">
+
+    <div class="container" style="margin-top: 15px;background: bisque;">
+        <h2>Survey Questions</h2>
+        <hr>
+        <h3>
+            <strong>About you</strong>
+        </h3>
+        <h4>Name (Required)</h4>
+        <input type="text" id="name" class="form-control" required style="background: tan; color: beige;">
+        <h4>Link to Photo Image (Required)</h4>
+        <input type="text" id="photo" class="form-control" required style="background: tan">
+        <h3>
+            <strong>Question #1</strong>
+        </h3>
+        <h4>I enjoy spending time around others.</h4>
+        <select id="q1" style="display: table; background: tan; color: beige">
+            <option value="NA"></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+        <h3>
+            <strong>Question #2</strong>
+        </h3>
+        <h4>I love to be active as much as possible.</h4>
+        <select id="q2" style="display: table; background: tan; color: beige">
+            <option value="NA"></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+        <h3>
+            <strong>Question #3</strong>
+        </h3>
+        <h4>I can adapt to overcome difficult situations.</h4>
+        <select id="q3" style="display: table; background: tan; color: beige">
+            <option value="NA"></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+        <h3>
+            <strong>Question #4</strong>
+        </h3>
+        <h4>I often feel as though I understand those around me.</h4>
+        <select id="q4" style="display: table; background: tan; color: beige">
+            <option value="NA"></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+        <h3>
+            <strong>Question #5</strong>
+        </h3>
+        <h4>I prefer lighter colors rather than darker colors</h4>
+        <select id="q5" style="display: table; background: tan; color: beige">
+            <option value="NA"></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+        <h3>
+            <strong>Question #6</strong>
+        </h3>
+        <h4>I believe we as a species are inherently good.</h4>
+        <select id="q6" style="display: table; background: tan; color: beige">
+            <option value="NA"></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+        <h3>
+            <strong>Question #7</strong>
+        </h3>
+        <h4>I can accept change.</h4>
+        <select id="q7" style="display: table; background: tan; color: beige">
+            <option value="NA"></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+        <h3>
+            <strong>Question #8</strong>
+        </h3>
+        <h4>I prefer things to remain the way they are.</h4>
+        <select id="q8" style="display: table; background: tan; color: beige">
+            <option value="NA"></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+        <h3>
+            <strong>Question #9</strong>
+        </h3>
+        <h4>Not knowing things is alright in my book.</h4>
+        <select id="q9" style="display: table; background: tan; color: beige">
+            <option value="NA"></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+        <h3>
+            <strong>Question #10</strong>
+        </h3>
+        <h4>Blackholes are scary.</h4>
+        <select id="q10" style="display: table; background: tan; color: beige">
+            <option value="NA"></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+        <button type="submit" class="btn btn-warning submit" style="margin: 25px 0px 25px 0px;">Submit</button>
+    </div>
 </body>
-// super important code on how it sends the data entered to server
+<!-- super important code on how it sends the data entered to server -->
 <script type="text/javascript">
-// on click event to submit the data entered
-$(".submit").on("click", function(event){
-    event.preventDefault();
+    // on click event to submit the data entered
+    $(".submit").on("click", function (event) {
+        event.preventDefault();
 
-    // grab all the forms elements
-    var newFriend = {
-        name: $("#name").val().trim(),
-        photo: $("#photo").val().trim(),
-        a1: $("#q1").val(),
-        a2: $("#q2").val(),
-        a3: $("#q3").val(),
-        a4: $("#q4").val(),
-        a5: $("#q5").val(),
-        a6: $("#q6").val(),
-        a7: $("#q7").val(),
-        a8: $("#q8").val(),
-        a9: $("#q9").val(),
-        a10: $("#q10").val()
-    };
+        // grab all the forms elements
+        var newFriend = {
+            name: $("#name").val().trim(),
+            photo: $("#photo").val().trim(),
+            a1: $("#q1").val(),
+            a2: $("#q2").val(),
+            a3: $("#q3").val(),
+            a4: $("#q4").val(),
+            a5: $("#q5").val(),
+            a6: $("#q6").val(),
+            a7: $("#q7").val(),
+            a8: $("#q8").val(),
+            a9: $("#q9").val(),
+            a10: $("#q10").val()
+        };
+// this console log has the data above
+        console.log(newFriend)
+// for some reason the data is lost after line 179
+// this post should update the friends array but it doesn't
+        $.post("/api/friends", newFriend, function (data) {
+            console.log(newFriend)
+            if (data) {
+                alert("Survey has been succesfully submitted.")
+                console.log(newFriend)
 
-    console.log(newFriend)
+            }
 
-    $.post("/api/friends", newFriend, function(data){
-        if (data) {
-            alert("Survey has been succesfully submitted.")
-        }
-
-        else {
-            alert("SOMETHING WENT WRONG OH NOOOOOOOOOOOOOOOO!")
-        }
-
-        $("#name").val("");
-        $("#photo").val("");
-        $("#q1").val("NA");
-        $("#q2").val("NA");
-        $("#q3").val("NA");
-        $("#q4").val("NA");
-        $("#q5").val("NA");
-        $("#q6").val("NA");
-        $("#q7").val("NA");
-        $("#q8").val("NA");
-        $("#q9").val("NA");
-        $("#q10").val("NA");
+            else {
+                alert("SOMETHING WENT WRONG OH NOOOOOOOOOOOOOOOO!")
+            }
+// this clears the form after submitting
+            $("#name").val("");
+            $("#photo").val("");
+            $("#q1").val("");
+            $("#q2").val("");
+            $("#q3").val("");
+            $("#q4").val("");
+            $("#q5").val("");
+            $("#q6").val("");
+            $("#q7").val("");
+            $("#q8").val("");
+            $("#q9").val("");
+            $("#q10").val("");
+        });
     });
-});
 
 </script>
+
 </html>
