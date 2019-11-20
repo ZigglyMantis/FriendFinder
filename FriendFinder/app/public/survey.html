@@ -29,7 +29,7 @@
                 </h3>
                 <h4>Placeholder</h4>
                 <select id="q1" style="display: table">
-                    <option value></option>
+                    <option value="NA"></option>
                     <option value="1">1 (Strongly Disagree)</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
@@ -41,7 +41,7 @@
                 </h3>
                 <h4>Placeholder</h4>
                 <select id="q2" style="display: table">
-                    <option value></option>
+                    <option value="NA"></option>
                     <option value="1">1 (Strongly Disagree)</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
@@ -53,7 +53,7 @@
                 </h3>
                 <h4>Placeholder</h4>
                 <select id="q3" style="display: table">
-                    <option value></option>
+                    <option value="NA"></option>
                     <option value="1">1 (Strongly Disagree)</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
@@ -65,7 +65,7 @@
                 </h3>
                 <h4>Placeholder</h4>
                 <select id="q4" style="display: table">
-                    <option value></option>
+                    <option value="NA"></option>
                     <option value="1">1 (Strongly Disagree)</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
@@ -77,7 +77,7 @@
                 </h3>
                 <h4>Placeholder</h4>
                 <select id="q5" style="display: table">
-                    <option value></option>
+                    <option value="NA"></option>
                     <option value="1">1 (Strongly Disagree)</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
@@ -89,7 +89,7 @@
                 </h3>
                 <h4>Placeholder</h4>
                 <select id="q6" style="display: table">
-                    <option value></option>
+                    <option value="NA"></option>
                     <option value="1">1 (Strongly Disagree)</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
@@ -101,7 +101,7 @@
                 </h3>
                 <h4>Placeholder</h4>
                 <select id="q7" style="display: table">
-                    <option value></option>
+                    <option value="NA"></option>
                     <option value="1">1 (Strongly Disagree)</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
@@ -113,7 +113,7 @@
                 </h3>
                 <h4>Placeholder</h4>
                 <select id="q8" style="display: table">
-                    <option value></option>
+                    <option value="NA"></option>
                     <option value="1">1 (Strongly Disagree)</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
@@ -125,7 +125,7 @@
                 </h3>
                 <h4>Placeholder</h4>
                 <select id="q9" style="display: table">
-                    <option value></option>
+                    <option value="NA"></option>
                     <option value="1">1 (Strongly Disagree)</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
@@ -137,7 +137,7 @@
                 </h3>
                 <h4>Placeholder</h4>
                 <select id="q10" style="display: table">
-                    <option value></option>
+                    <option value="NA"></option>
                     <option value="1">1 (Strongly Disagree)</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
@@ -147,8 +147,53 @@
             <button type="submit" class="btn btn-primary submit" style="margin: 25px 0px 25px 0px;">Submit</button>
         </div>
 </body>
+// super important code on how it sends the data entered to server
 <script type="text/javascript">
+// on click event to submit the data entered
+$(".submit").on("click", function(event){
+    event.preventDefault();
 
+    // grab all the forms elements
+    var newFriend = {
+        name: $("#name").val().trim(),
+        photo: $("#photo").val().trim(),
+        a1: $("#q1").val(),
+        a2: $("#q2").val(),
+        a3: $("#q3").val(),
+        a4: $("#q4").val(),
+        a5: $("#q5").val(),
+        a6: $("#q6").val(),
+        a7: $("#q7").val(),
+        a8: $("#q8").val(),
+        a9: $("#q9").val(),
+        a10: $("#q10").val()
+    };
+
+    console.log(newFriend)
+
+    $.post("/api/friends", newFriend, function(data){
+        if (data) {
+            alert("Survey has been succesfully submitted.")
+        }
+
+        else {
+            alert("SOMETHING WENT WRONG OH NOOOOOOOOOOOOOOOO!")
+        }
+
+        $("#name").val("");
+        $("#photo").val("");
+        $("#q1").val("NA");
+        $("#q2").val("NA");
+        $("#q3").val("NA");
+        $("#q4").val("NA");
+        $("#q5").val("NA");
+        $("#q6").val("NA");
+        $("#q7").val("NA");
+        $("#q8").val("NA");
+        $("#q9").val("NA");
+        $("#q10").val("NA");
+    });
+});
 
 </script>
 </html>
