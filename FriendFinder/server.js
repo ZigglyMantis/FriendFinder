@@ -2,13 +2,18 @@
 // Dependencies
 // NPM packages that allow more useful functionality
 //===================================================
-
 const express = require("express")
-
+var mysql = require("mysql");
 //===================================================
 // Configure Express Server
 //===================================================
-
+var connection = mysql.createConnection({
+    host: "localhost",
+    port: 3306,
+    user: "root",
+    password: "root",
+    database: "quotes_db"
+  });
 // creating an 'express' server
 var app = express();
 
