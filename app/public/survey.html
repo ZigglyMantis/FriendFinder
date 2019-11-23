@@ -178,6 +178,9 @@
 // this post updates the friend array with the inputed information
         $.post("/api/friends", newFriend, function (data) {
             // console.log("after post: " + newFriend)
+            if (data) {
+                console.log("survey has been submitted.")
+            } 
 // this clears the form after submitting
         });
     $("#name").val("");
