@@ -8,10 +8,9 @@ module.exports = function(app){
     app.get("/api/friends", function(req, res){
         res.json(friendData);
     });
-
+    //this sends the post request to api/friends
     app.post("/api/friends", function(req, res){
+        friendData.push(req.body)
         res.json(friendData)
-        console.log(res)
-        console.log(req.body)
     });
 };

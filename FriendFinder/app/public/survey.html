@@ -174,34 +174,24 @@
             a10: $("#q10").val()
         };
 // this console log has the data above
-        console.log(newFriend)
-// for some reason the data is lost after line 179
-// this post should update the friends array but it doesn't
+        // console.log("before post: " + newFriend)
+// this post updates the friend array with the inputed information
         $.post("/api/friends", newFriend, function (data) {
-            console.log(newFriend)
-            if (data) {
-                alert("Survey has been succesfully submitted.")
-                console.log(newFriend)
-
-            }
-
-            else {
-                alert("SOMETHING WENT WRONG OH NOOOOOOOOOOOOOOOO!")
-            }
+            // console.log("after post: " + newFriend)
 // this clears the form after submitting
-            $("#name").val("");
-            $("#photo").val("");
-            $("#q1").val("");
-            $("#q2").val("");
-            $("#q3").val("");
-            $("#q4").val("");
-            $("#q5").val("");
-            $("#q6").val("");
-            $("#q7").val("");
-            $("#q8").val("");
-            $("#q9").val("");
-            $("#q10").val("");
         });
+    $("#name").val("");
+    $("#photo").val("");
+    $("#q1").val("");
+    $("#q2").val("");
+    $("#q3").val("");
+    $("#q4").val("");
+    $("#q5").val("");
+    $("#q6").val("");
+    $("#q7").val("");
+    $("#q8").val("");
+    $("#q9").val("");
+    $("#q10").val("");
     });
 
 </script>
